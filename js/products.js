@@ -1,6 +1,6 @@
 const ORDER_ASC_BY_COST = "ASC";
 const ORDER_DESC_BY_COST = "DESC";
-const ORDER_BY_PROD_COUNT = "";
+const ORDER_BY_PROD_COUNT = "Precio";
 var currentProductArray = [];
 var currentSortCriteria = undefined;
 var minCount = undefined;
@@ -114,14 +114,14 @@ document.addEventListener("DOMContentLoaded", function(e){
         minCount = document.getElementById("rangeFilterCountMin").value;
         maxCount = document.getElementById("rangeFilterCountMax").value;
 
-        if ((minCount != undefined) && (minCount != "") && (parseInt(minCount)) >= 0){
+        if ((minCount != undefined) && (minCount != "") && (parseInt(minCount)) >=0 ){
             minCount = parseInt(minCount);
         }
         else{
             minCount = undefined;
         }
 
-        if ((maxCount != undefined) && (maxCount != "") && (parseInt(maxCount)) >= 0){
+        if ((maxCount != undefined) && (maxCount != "") && (parseInt(maxCount)) >=0){
             maxCount = parseInt(maxCount);
         }
         else{
